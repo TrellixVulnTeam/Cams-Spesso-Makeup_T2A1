@@ -1,0 +1,76 @@
+/* diseño mobile */
+
+/* @media screen and (max-width: 320px) {
+    .gridContainer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-area: 
+        "logo logo"
+        "navIzq navDer"
+        "parrafo parrafo"
+        "imagen imagen"
+        "footer footer";
+    }
+    #logo{
+        display: grid;
+        grid-area: logo;
+        justify-items: center;
+    }
+
+    .imagen_logo{
+        width:100%;
+        max-width: 160px;
+    }
+
+    .menu_header{
+        list-style: none;
+    }
+    .menu_header li{
+        display: inline-block;
+    }
+    .menu_header li a{
+        text-decoration: none;
+        color: brown;
+    }
+    .navIzq{
+        display: grid;
+        grid-area: navIzq;
+        justify-items: center;
+    }
+    .navDer{
+        display: grid;
+        grid-area: navDer;
+        justify-items: center;
+    }
+    #parrafo{
+        display: grid;
+        justify-items: center;
+        grid-area: parrafo;
+    }
+
+    #imagen{
+        display: grid;
+        justify-items: center;
+        grid-area: imagen;
+    }
+    .imagen_parrafo{
+        width: 100%;
+    }
+    #footer{
+        display: grid;
+        justify-items: center;
+        grid-area: footer;
+        background-color: crimson;
+    }
+    #footer ul{
+list-style: none;
+    }
+    #footer ul li{
+        display: inline-block;
+    }
+    #footer ul li a{
+        text-decoration: none;
+        color: aliceblue;
+    }
+
+} */
