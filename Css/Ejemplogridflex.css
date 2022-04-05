@@ -1,76 +1,195 @@
-/* diseño mobile */
+*{
+    margin: 0;
+    padding: 0;
+}
 
-/* @media screen and (max-width: 320px) {
-    .gridContainer{
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+/* Codigo Banner/Cabecera  */
+header{
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: black;
+    color: #ffffff;
+    font-size: 30px;
+    display: grid;
+    grid-template-columns: 100px 520px 52%;
+
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:25px;
+}
+
+header a:link, a:visited, a:active {
+    text-decoration:none;
+}
+header a{
+    color: #ffffff;
+}
+
+.logo{
+padding-top: 5px;
+    width: 130%;
+}
+
+.banner{
+ padding-left: 50px;
+    
+}
+
+.banner h1{
+    color: #ffffff;
+    font-family: 'Pinyon Script', cursive;
+    font-size: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+@media screen and (max-width: 480px) {
+    header{
+        padding-left: 30px;
+        padding-right: 30px;
+        background-color: black;
+        color: #ffffff;
+        font-size: 20px;
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-area: 
-        "logo logo"
-        "navIzq navDer"
-        "parrafo parrafo"
-        "imagen imagen"
-        "footer footer";
+        grid-template-columns: 100px 320px;
+        grid-template-rows: auto auto;
     }
-    #logo{
-        display: grid;
-        grid-area: logo;
-        justify-items: center;
-    }
-
-    .imagen_logo{
-        width:100%;
-        max-width: 160px;
-    }
-
-    .menu_header{
+    
+    ul {
         list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap:25px;
     }
-    .menu_header li{
-        display: inline-block;
+    
+    header a:link, a:visited, a:active {
+        text-decoration:none;
     }
-    .menu_header li a{
-        text-decoration: none;
-        color: brown;
+    header a{
+        color: #ffffff;
     }
-    .navIzq{
-        display: grid;
-        grid-area: navIzq;
-        justify-items: center;
+    
+    .logo{
+    padding-top: 5px;
+        width: 130%;
     }
-    .navDer{
-        display: grid;
-        grid-area: navDer;
-        justify-items: center;
+    
+    .banner{
+     padding-left: 50px;
+        
     }
-    #parrafo{
-        display: grid;
-        justify-items: center;
-        grid-area: parrafo;
+    
+    .banner h1{
+        color: #ffffff;
+        font-family: 'Pinyon Script', cursive;
+        font-size: 50px;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
+}
 
-    #imagen{
+/* Codigo para el pie de pagina */
+
+footer{
+    padding-left: 10px;
+    padding-top: 20px;
+}
+footer a{
+    padding-left: 10px;
+    padding-bottom: 8px;
+    color: #d93821;
+}
+a:link, a:visited, a:active {
+    text-decoration:none;
+}
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+.container-sobremi{
+    display: grid;
+    grid-template-columns: 55% 45%;
+    grid-template-rows: 200px auto;
+    grid-template-areas: 
+    "titulo-sobre imagen-sobre"
+    "texto-sobre imagen-sobre"
+}
+.texto--sobremi{
+    grid-area: texto-sobre;
+    color: #d8bebd;
+    padding-left: 50px;
+    padding-right: 115px;
+}
+
+.titulo--sobremi{
+    grid-area: titulo-sobre;
+    font-size: 50px;
+    padding-top: 75px;
+    padding-left: 150px;
+    color: #d8bebd;
+}
+
+.img--sobremi{
+    padding-top: 30px;
+    grid-area: imagen-sobre;
+    display: flex;
+    justify-content: center;
+}
+.fondo_sobremi{
+    background-image: url(../Images/FondoSobremi.jpg);
+    background-color: #161616;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: right;
+}
+@media screen and (max-width:480px) {
+    .container-sobremi{
         display: grid;
-        justify-items: center;
-        grid-area: imagen;
-    }
-    .imagen_parrafo{
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: 
+        "titulo-sobre"
+        "imagen-sobre"
+        "texto-sobre";
+    }  
+    .titulo--sobremi{
         width: 100%;
-    }
-    #footer{
         display: grid;
-        justify-items: center;
-        grid-area: footer;
-        background-color: crimson;
+        grid-area: titulo-sobre;
+        font-size: 50px;
+        color: #d8bebd;
+        padding-left: 0px;
+        padding-top: 50px;
+        display: flex;
+        justify-content: center;
+
     }
-    #footer ul{
-list-style: none;
+    .texto--sobremi{
+        grid-area: texto-sobre;
+        color: #d8bebd;
+        padding-top: 50px;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding: 20px;
+
     }
-    #footer ul li{
-        display: inline-block;
-    }
-    #footer ul li a{
-        text-decoration: none;
-        color: aliceblue;
+    
+    .img--sobremi{
+        display: grid;
+        grid-area: imagen-sobre;
+        width: 90%;
+        padding-left: 15px;
     }
 
-} */
+    .fondo_sobremi{
+        background-image: none;
+        background-color: #161616;
+        background-repeat: no-repeat;
+    }
+}

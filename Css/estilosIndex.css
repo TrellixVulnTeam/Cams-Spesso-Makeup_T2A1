@@ -69,3 +69,74 @@ footer a{
 a:link, a:visited, a:active {
     text-decoration:none;
 }
+
+@media screen and (max-width:480px) {
+    .fondo {
+        background-color: #161616;
+        background-image: url(../Images/Fondo2.jpg);
+        background-repeat:no-repeat;
+        background-size: cover;
+    }    
+    
+    .banner h1{
+        color: #ffffff;
+        font-family: 'Pinyon Script', cursive;
+        font-size: 90px;
+        padding-left: 10px;
+    }
+    .portada{
+        /*  Esta es la imagen del beso */
+        position: absolute;
+        top: 150px;
+        left: 53px;
+    }
+    
+    .container-padre{
+        width: 100%;
+        display: grid;
+        grid-template-columns:auto;
+        grid-template-rows: 250px 300px auto;
+        grid-template-areas: 
+        "banner none"
+        "nav none"
+        "footer footer";
+    }
+    
+    .banner{
+        grid-area: banner;
+        display: flex;
+        justify-content: center;
+        padding-top: 30px;
+    }
+
+    .nav{
+        grid-area: nav;
+    }
+    ul {
+        list-style: none;
+        padding-top: 30px;
+    
+    }
+    li{
+        padding-left: 45px;
+        padding-top: 10px;
+    }
+    .boton{
+        padding: 0px;
+        color: #ffffff;
+        font-family: 'Lato', sans-serif;
+        font-size: 55px;
+    }
+    
+    footer{
+        grid-area: footer;
+        padding-top: 40px;
+    }
+    footer a{
+        padding-left: 55px;
+        color: #d93821;
+    }
+    a:link, a:visited, a:active {
+        text-decoration:none;
+    }
+}
