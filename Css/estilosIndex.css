@@ -48,14 +48,19 @@ ul {
 
 }
 li{
-    padding-left: 45px;
+    padding-left: 40px;
     padding-top: 10px;
 }
+.boton:hover{
+    color: #161616;
+    background-color: #ffffff;
+}
 .boton{
-    padding: 0px;
+    padding: 5px;
     color: #d8bebd;
     font-family: 'Lato', sans-serif;
     font-size: 55px;
+    border-radius: 10px;
 }
 
 footer{
@@ -69,7 +74,9 @@ footer a{
 a:link, a:visited, a:active {
     text-decoration:none;
 }
-
+footer a:hover{
+    /* a definir */
+}
 @media screen and (max-width:480px) {
     .fondo {
         background-color: #161616;

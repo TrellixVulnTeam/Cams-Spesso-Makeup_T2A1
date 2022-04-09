@@ -14,7 +14,7 @@ header{
     color: #ffffff;
     font-size: 30px;
     display: grid;
-    grid-template-columns: 100px 520px 52%;
+    grid-template-columns: 100px 500px 54%;
 
 }
 
@@ -23,7 +23,16 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap:25px;
+    gap:20px;
+}
+
+.boton{
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.boton:hover{
+    background-color: #161616;
 }
 
 header a:link, a:visited, a:active {
