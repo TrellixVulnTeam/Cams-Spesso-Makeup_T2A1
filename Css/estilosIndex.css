@@ -77,47 +77,47 @@ a:link, a:visited, a:active {
 /* footer a:hover{
      a definir
 } */
-@media screen and (max-width:480px) {
+@media screen and (max-width:912px) {
     .fondo {
         background-color: #161616;
         background-image: url(../Images/Fondo2.jpg);
         background-repeat:no-repeat;
         background-size: cover;
     }    
+    .portada{
+        padding-top: 50px;
+        }
     
     .banner h1{
         color: #ffffff;
         font-family: 'Pinyon Script', cursive;
-        font-size: 90px;
+        font-size: 80px;
         padding-left: 10px;
-    }
-    .portada{
-        /*  Esta es la imagen del beso */
-        position: absolute;
-        top: 150px;
-        left: 53px;
     }
     
     .container-padre{
         width: 100%;
         display: grid;
-        grid-template-columns:auto;
-        grid-template-rows: 250px 300px auto;
+        grid-template-columns:100%;
+        grid-template-rows: auto 300px auto;
         grid-template-areas: 
-        "banner none"
-        "nav none"
-        "footer footer";
+        "banner"
+        "nav"
+        "footer";
     }
-    
     .banner{
         grid-area: banner;
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         padding-top: 30px;
+        margin-left: 20px;
     }
 
     .nav{
         grid-area: nav;
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 20px;
     }
     ul {
         list-style: none;
@@ -125,14 +125,14 @@ a:link, a:visited, a:active {
     
     }
     li{
-        padding-left: 45px;
+        padding-left: 0px;
         padding-top: 10px;
     }
     .boton{
         padding: 0px;
-        color: #ffffff;
+        color: #d8bebd;
         font-family: 'Lato', sans-serif;
-        font-size: 55px;
+        font-size: 35px;
     }
     
     footer{
@@ -140,10 +140,23 @@ a:link, a:visited, a:active {
         padding-top: 40px;
     }
     footer a{
-        padding-left: 55px;
+        padding-left: 30px;
         color: #d93821;
     }
     a:link, a:visited, a:active {
         text-decoration:none;
     }
+}
+@media screen and (max-width:680px) {
+    .portada{
+        /*  Esta es la imagen del beso */
+        display:none;
+    }
+
+}
+@media screen and (max-width:412px) {
+    span{
+        display: none;
+    }
+
 }

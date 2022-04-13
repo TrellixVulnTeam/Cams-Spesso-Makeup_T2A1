@@ -8,22 +8,38 @@ body{
 }
 /* Codigo Banner/Cabecera  */
 header{
-    padding-left: 30px;
-    padding-right: 30px;
     background-color: black;
     color: #ffffff;
-    font-size: 30px;
-    display: grid;
-    grid-template-columns: 100px 520px 52%;
+    font-size: 190%;
+}
 
+.logo{
+    width: 140px;
+    height: 85px;
+}
+
+@media screen and (max-width:530px) {
+   .banner span{
+       display: none;
+   }
 }
 
 ul {
     list-style: none;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    gap:25px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.boton{
+    padding: 5px;
+    border-radius: 10px;
+    margin-left: 3px;
+}
+
+.boton:hover{
+    background-color: #161616;
+    color: #ffffff;
 }
 
 header a:link, a:visited, a:active {
@@ -33,67 +49,13 @@ header a{
     color: #ffffff;
 }
 
-.logo{
-padding-top: 5px;
-    width: 130%;
-}
-
-.banner{
- padding-left: 50px;
-    
-}
 
 .banner h1{
     color: #ffffff;
     font-family: 'Pinyon Script', cursive;
     font-size: 50px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-@media screen and (max-width: 480px) {
-    header{
-        padding-left: 30px;
-        padding-right: 30px;
-        background-color: black;
-        color: #ffffff;
-        font-size: 20px;
-        display: grid;
-        grid-template-columns: 100px 320px;
-        grid-template-rows: auto auto;
-    }
-    
-    ul {
-        list-style: none;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap:25px;
-    }
-    
-    header a:link, a:visited, a:active {
-        text-decoration:none;
-    }
-    header a{
-        color: #ffffff;
-    }
-    
-    .logo{
-    padding-top: 5px;
-        width: 130%;
-    }
-    
-    .banner{
-     padding-left: 50px;
-        
-    }
-    
-    .banner h1{
-        color: #ffffff;
-        font-family: 'Pinyon Script', cursive;
-        font-size: 50px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
+    padding-top: 16px;
+    text-align: center;
 }
 
 /* Codigo para el pie de pagina */
@@ -104,7 +66,6 @@ footer{
 }
 footer a{
     padding-left: 10px;
-    padding-bottom: 8px;
     color: #d93821;
 }
 a:link, a:visited, a:active {
@@ -193,3 +154,59 @@ a:link, a:visited, a:active {
         background-repeat: no-repeat;
     }
 }
+
+/* Mis trabajos */
+.fondo-mistrabajos{
+    background-color: #161616;
+    background-image: url(../Images/MisTrabajos.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-y: 45%;
+    font-family: 'Montserrat', sans-serif;
+}
+.titulo-mistrabajos{
+    font-size: 50px;
+    text-align: center;
+    align-items: center;
+    color: #ffffff;
+}
+.texto-mistrabajos{
+    display: flex;
+    text-align: center;
+    color: #ffffff;
+}
+/* Set your aspect ratio */
+.video-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-bottom: 56.25%; 
+  }
+  
+  .video-container iframe,
+  .video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+  }
+  
+  /* And set the max-width of the parent element */
+  .video-wrap {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+  }
+  .contenedor-mis-trabajos{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .row-mis-trabajos{
+    height: 500px;
+  }
