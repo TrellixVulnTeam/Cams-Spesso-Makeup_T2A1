@@ -1,0 +1,79 @@
+@import "index";
+@import "sobremi";
+@import "mistrabajos";
+@import "galeria";
+@import "contactos";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Codigo Banner/Cabecera  */
+
+header{
+    background-color: black;
+    color: #ffffff;
+    font-size: 190%;
+    a{
+        color: #ffffff;
+        &:link, &:visited, &:active{
+            text-decoration:none;
+        }
+    }
+}
+
+.logo{
+    width: 130px;
+}
+
+.ul-header {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+}
+
+.boton{
+    padding: 5px;
+    border-radius: 10px;
+    margin-left: 3px;
+    &:hover{
+        background-color: #ffffff;
+        color: #161616;
+    }
+}
+
+
+.banner h1{
+    color: #ffffff;
+    font-family: 'Pinyon Script', cursive;
+    font-size: 50px;
+    padding-top: 16px;
+    padding-left: 20px;
+    text-align: center;
+}
+
+@media screen and (max-width:530px) {
+   .banner span{
+       display: none;
+   }
+}
+/* Codigo para el pie de pagina */
+
+footer{
+    padding-left: 10px;
+    padding-top: 20px;
+    a{
+        padding-left: 10px;
+        color: #d93821;
+        &:link, &:visited, &:active{
+            text-decoration:none;
+        }
+    }
+}

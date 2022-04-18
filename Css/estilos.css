@@ -1,0 +1,458 @@
+.fondo-index {
+  background-color: #161616;
+  background-image: url(../Images/Fondo2.jpg);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: right; }
+
+.portada {
+  /*  Esta es la imagen del beso */
+  position: absolute;
+  top: 50px;
+  left: 450px; }
+
+.container-padre {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 500px auto;
+  grid-template-rows: 200px 350px auto;
+  grid-template-areas: "banner none" "nav none" "footer footer"; }
+
+.banner-index {
+  grid-area: banner;
+  display: flex;
+  justify-content: center;
+  padding-top: 30px; }
+
+.banner-index h1 {
+  color: #ffffff;
+  font-family: 'Pinyon Script', cursive;
+  font-size: 90px; }
+
+.nav {
+  grid-area: nav; }
+
+.menu {
+  list-style: none;
+  padding-top: 30px; }
+
+.li-index {
+  margin-top: 10px; }
+
+.boton-index:hover {
+  color: #161616;
+  background-color: #ffffff; }
+
+.boton-index {
+  padding: 5px;
+  color: #d8bebd;
+  font-family: 'Lato', sans-serif;
+  font-size: 55px;
+  border-radius: 10px;
+  margin-left: 40px; }
+
+.footer-index {
+  grid-area: footer;
+  padding-top: 40px; }
+
+.footer-index a {
+  padding-left: 55px;
+  color: #d93821; }
+
+a:link, a:visited, a:active {
+  text-decoration: none; }
+
+/* footer a:hover{
+     a definir
+} */
+@media screen and (max-width: 912px) {
+  .fondo-index {
+    background-color: #161616;
+    background-image: url(../Images/Fondo2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .portada {
+    padding-top: 50px; }
+  .banner-index h1 {
+    color: #ffffff;
+    font-family: 'Pinyon Script', cursive;
+    font-size: 80px;
+    padding-left: 10px; }
+  .container-padre {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto 300px auto;
+    grid-template-areas: "banner" "nav" "footer"; }
+  .banner-index {
+    grid-area: banner;
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 30px;
+    margin-left: 20px; }
+  .nav {
+    grid-area: nav;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 20px; }
+  .menu {
+    list-style: none;
+    padding-top: 30px; }
+  .li-index {
+    padding-left: 0px;
+    padding-top: 10px; }
+  .boton-index {
+    padding: 0px;
+    color: #d8bebd;
+    font-family: 'Lato', sans-serif;
+    font-size: 35px; }
+  .footer-index {
+    grid-area: footer;
+    padding-top: 40px; }
+  .footer-index a {
+    padding-left: 30px;
+    color: #d93821; }
+  a:link, a:visited, a:active {
+    text-decoration: none; } }
+
+@media screen and (max-width: 680px) {
+  .portada {
+    /*  Esta es la imagen del beso */
+    display: none; } }
+
+@media screen and (max-width: 412px) {
+  span {
+    display: none; }
+  .portada {
+    display: none; } }
+
+.container-sobremi {
+  display: grid;
+  grid-template-columns: 55% 45%;
+  grid-template-rows: 200px auto;
+  grid-template-areas: "titulo-sobre imagen-sobre" "texto-sobre imagen-sobre"; }
+
+.texto--sobremi {
+  grid-area: texto-sobre;
+  color: #d8bebd;
+  padding-left: 50px;
+  padding-right: 115px; }
+
+.titulo--sobremi {
+  grid-area: titulo-sobre;
+  font-size: 50px;
+  padding-top: 80px;
+  padding-left: 150px;
+  color: #d8bebd; }
+
+.img--sobremi {
+  padding-top: 20px;
+  padding-right: 100px;
+  grid-area: imagen-sobre;
+  display: flex;
+  justify-content: center; }
+
+.fondo_sobremi {
+  background-image: url(../Images/FondoSobremi.jpg);
+  background-color: #161616;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: right; }
+
+.no-padding {
+  padding-top: 0px; }
+
+@media screen and (max-width: 480px) {
+  .container-sobremi {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "titulo-sobre" "imagen-sobre" "texto-sobre"; }
+  .titulo--sobremi {
+    grid-area: titulo-sobre;
+    padding-left: 0px;
+    padding-top: 50px;
+    text-align: center; }
+  .texto--sobremi {
+    width: 95%;
+    grid-area: texto-sobre;
+    padding-top: 50px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding: 20px;
+    display: flex;
+    align-items: center; }
+  .img--sobremi {
+    padding-top: 0px;
+    padding-right: 0px;
+    grid-area: imagen-sobre;
+    width: 100%; }
+  .fondo_sobremi {
+    background-image: none; } }
+
+.fondo-mistrabajos {
+  background-color: #161616;
+  background-image: url(../Images/MisTrabajos.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position-y: 45%; }
+
+.container-uno {
+  padding-top: 150px;
+  display: grid;
+  width: 100%;
+  grid-template-columns: 700px auto;
+  grid-template-rows: 100px 200px; }
+
+.titulo-mistrabajos {
+  font-size: 50px;
+  text-align: center;
+  align-items: center;
+  color: #ffffff; }
+
+.texto-mistrabajos {
+  padding-left: 50px;
+  padding-top: 20px;
+  display: flex;
+  text-align: center;
+  color: #ffffff; }
+
+.video-uno {
+  margin-left: 80px;
+  padding-top: 0px; }
+
+.container-dos {
+  padding-top: 150px;
+  padding-bottom: 100px;
+  display: grid;
+  width: 100%;
+  grid-template-columns: auto 700px;
+  grid-template-rows: 100px 200px;
+  grid-template-areas: "video titulo" "video texto"; }
+
+.video-dos {
+  grid-area: video;
+  padding-left: 80px;
+  padding-top: 0px; }
+
+.titulo-mistrabajos-dos {
+  padding-right: 70px;
+  grid-area: titulo;
+  font-size: 50px;
+  text-align: center;
+  align-items: center;
+  color: #ffffff; }
+
+.texto-mistrabajos-dos {
+  padding-top: 20px;
+  padding-right: 50px;
+  grid-area: texto;
+  display: flex;
+  text-align: center;
+  color: #ffffff; }
+
+@media screen and (max-width: 720px) {
+  .fondo-mistrabajos {
+    background-color: #161616;
+    background-image: url(../Images/MisTrabajos.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-y: 45%; }
+  .container-uno {
+    padding-top: 50px;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 270px 300px; }
+  .titulo-mistrabajos {
+    padding-left: 30px;
+    font-size: 250%;
+    color: #ffffff;
+    text-align: left;
+    display: flex;
+    align-items: flex-start; }
+  .texto-mistrabajos {
+    width: 400px;
+    padding-left: 30px;
+    padding-top: 30px;
+    size: 80%;
+    display: flex;
+    text-align: center;
+    color: #ffffff; }
+  .video-uno {
+    padding-left: 0px;
+    padding-top: 0px; }
+  .container-dos {
+    padding-top: 50px;
+    padding-bottom: 100px;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 480px;
+    grid-template-rows: 100px 270px 160px;
+    grid-template-areas: "titulo" "video"  "texto"; }
+  .video-dos {
+    grid-area: video;
+    padding-left: 0px;
+    padding-top: 0px; }
+  .titulo-mistrabajos-dos {
+    padding-left: 35px;
+    font-size: 230%;
+    color: #ffffff;
+    text-align: left;
+    display: flex;
+    align-items: flex-start; }
+  .texto-mistrabajos-dos {
+    width: 400px;
+    padding-left: 30px;
+    padding-top: 30px;
+    size: 80%;
+    display: flex;
+    text-align: center;
+    color: #ffffff; } }
+
+.item-fotos img {
+  width: 183px;
+  padding-left: 2px;
+  padding-right: 2px;
+  padding-top: 4px;
+  border: #161616; }
+
+.fotos {
+  padding-bottom: 0px;
+  padding-top: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+.fondo-contactos {
+  background-color: #161616;
+  background-image: url(../Images/ParaContatcos.jpg);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: right; }
+
+form {
+  color: #ffffff;
+  text-align: center;
+  background-color: black;
+  border-radius: 30px;
+  margin-top: 100px;
+  margin-bottom: 60px;
+  margin-left: 50px;
+  margin-right: 50px; }
+  form h2 {
+    font-size: 30px;
+    padding: 20px; }
+  form p {
+    padding: 3px;
+    font-size: 25px; }
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+.form__input {
+  display: block;
+  width: 100%;
+  font-family: inherit;
+  font-size: 20px;
+  padding: 5px;
+  outline: none;
+  border: 1px solid;
+  margin-bottom: 20px;
+  border-radius: 5px; }
+
+.form__cta {
+  font-family: inherit;
+  font-size: 18px;
+  padding: 4px;
+  background-color: #d93821;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer; }
+
+.form__input--message {
+  font-family: inherit;
+  font-size: 20px;
+  outline: none;
+  border: none;
+  border: 1px solid;
+  padding: 5px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  border-radius: 5px;
+  padding-right: 13px; }
+
+input, textarea {
+  border-radius: 3px; }
+  input:focus, textarea:focus {
+    color: #d93821; }
+
+@media screen and (max-width: 750px) {
+  .fondo-contactos {
+    background-color: #161616;
+    background-image: url(../Images/ParaContatcos.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: right; } }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: 'Montserrat', sans-serif; }
+
+/* Codigo Banner/Cabecera  */
+header {
+  background-color: black;
+  color: #ffffff;
+  font-size: 190%; }
+  header a {
+    color: #ffffff; }
+    header a:link, header a:visited, header a:active {
+      text-decoration: none; }
+
+.logo {
+  width: 130px; }
+
+.ul-header {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Montserrat', sans-serif;
+  width: 100%; }
+
+.boton {
+  padding: 5px;
+  border-radius: 10px;
+  margin-left: 3px; }
+  .boton:hover {
+    background-color: #ffffff;
+    color: #161616; }
+
+.banner h1 {
+  color: #ffffff;
+  font-family: 'Pinyon Script', cursive;
+  font-size: 50px;
+  padding-top: 16px;
+  padding-left: 20px;
+  text-align: center; }
+
+@media screen and (max-width: 530px) {
+  .banner span {
+    display: none; } }
+
+/* Codigo para el pie de pagina */
+footer {
+  padding-left: 10px;
+  padding-top: 20px; }
+  footer a {
+    padding-left: 10px;
+    color: #d93821; }
+    footer a:link, footer a:visited, footer a:active {
+      text-decoration: none; }

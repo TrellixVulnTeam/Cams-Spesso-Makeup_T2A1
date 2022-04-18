@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
 }
-.fondo {
+.fondo-index {
     background-color: #161616;
     background-image: url(../Images/Fondo2.jpg);
     background-repeat:no-repeat;
@@ -28,13 +28,13 @@
     "footer footer";
 }
 
-.banner{
+.banner-index{
     grid-area: banner;
     display: flex;
     justify-content: center;
     padding-top: 30px;
 }
-.banner h1{
+.banner-index h1{
     color: #ffffff;
     font-family: 'Pinyon Script', cursive;
     font-size: 90px;
@@ -42,32 +42,32 @@
 .nav{
     grid-area: nav;
 }
-ul {
+.menu {
     list-style: none;
     padding-top: 30px;
 
 }
-li{
-    padding-left: 40px;
-    padding-top: 10px;
+.li-index{
+    margin-top: 10px;
 }
-.boton:hover{
+.boton-index:hover{
     color: #161616;
     background-color: #ffffff;
 }
-.boton{
+.boton-index{
     padding: 5px;
     color: #d8bebd;
     font-family: 'Lato', sans-serif;
     font-size: 55px;
     border-radius: 10px;
+    margin-left: 40px;
 }
 
-footer{
+.footer-index{
     grid-area: footer;
     padding-top: 40px;
 }
-footer a{
+.footer-index a{
     padding-left: 55px;
     color: #d93821;
 }
@@ -78,7 +78,7 @@ a:link, a:visited, a:active {
      a definir
 } */
 @media screen and (max-width:912px) {
-    .fondo {
+    .fondo-index{
         background-color: #161616;
         background-image: url(../Images/Fondo2.jpg);
         background-repeat:no-repeat;
@@ -88,7 +88,7 @@ a:link, a:visited, a:active {
         padding-top: 50px;
         }
     
-    .banner h1{
+    .banner-index h1{
         color: #ffffff;
         font-family: 'Pinyon Script', cursive;
         font-size: 80px;
@@ -105,7 +105,7 @@ a:link, a:visited, a:active {
         "nav"
         "footer";
     }
-    .banner{
+    .banner-index{
         grid-area: banner;
         display: flex;
         justify-content: flex-start;
@@ -119,27 +119,27 @@ a:link, a:visited, a:active {
         justify-content: flex-start;
         margin-left: 20px;
     }
-    ul {
+    .menu {
         list-style: none;
         padding-top: 30px;
     
     }
-    li{
+    .li-index{
         padding-left: 0px;
         padding-top: 10px;
     }
-    .boton{
+    .boton-index{
         padding: 0px;
         color: #d8bebd;
         font-family: 'Lato', sans-serif;
         font-size: 35px;
     }
     
-    footer{
+    .footer-index{
         grid-area: footer;
         padding-top: 40px;
     }
-    footer a{
+    .footer-index a{
         padding-left: 30px;
         color: #d93821;
     }
@@ -158,5 +158,7 @@ a:link, a:visited, a:active {
     span{
         display: none;
     }
-
+    .portada{
+        display:none;
+    }
 }

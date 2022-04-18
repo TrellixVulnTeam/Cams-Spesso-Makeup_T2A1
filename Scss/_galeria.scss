@@ -1,0 +1,15 @@
+.item-fotos img{
+    width: 183px;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-top: 4px;
+    border: #161616;
+}
+
+.fotos{
+    padding-bottom: 0px;
+    padding-top: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
