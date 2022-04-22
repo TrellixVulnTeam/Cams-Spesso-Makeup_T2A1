@@ -314,7 +314,7 @@ a:link, a:visited, a:active {
     color: #ffffff; } }
 
 .item-fotos img {
-  width: 183px;
+  width: 180px;
   padding-left: 2px;
   padding-right: 2px;
   padding-top: 4px;
@@ -357,7 +357,7 @@ form {
 
 .form__input {
   display: block;
-  width: 100%;
+  width: 90%;
   font-family: inherit;
   font-size: 20px;
   padding: 5px;
@@ -374,6 +374,8 @@ form {
   border: none;
   border-radius: 2px;
   cursor: pointer; }
+  .form__cta:hover {
+    background-color: #ba3623; }
 
 .form__input--message {
   font-family: inherit;
@@ -383,14 +385,13 @@ form {
   border: 1px solid;
   padding: 5px;
   margin-bottom: 20px;
-  margin-left: 10px;
-  border-radius: 5px;
-  padding-right: 13px; }
+  border-radius: 5px; }
 
 input, textarea {
   border-radius: 3px; }
   input:focus, textarea:focus {
-    color: #d93821; }
+    background-color: #edccc7;
+    border-color: #d93821; }
 
 @media screen and (max-width: 750px) {
   .fondo-contactos {
@@ -398,7 +399,12 @@ input, textarea {
     background-image: url(../Images/ParaContatcos.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
-    background-position: right; } }
+    background-position: right; }
+  form {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    margin-right: 5%; } }
 
 * {
   margin: 0;
@@ -429,11 +435,13 @@ header {
 
 .boton {
   padding: 5px;
+  padding-top: 0px;
   border-radius: 10px;
-  margin-left: 3px; }
+  margin-left: 5px; }
   .boton:hover {
-    background-color: #ffffff;
-    color: #161616; }
+    /*         background-color: #ffffff;
+        color: #161616; */
+    color: #de5543; }
 
 .banner h1 {
   color: #ffffff;

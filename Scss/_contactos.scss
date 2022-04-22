@@ -32,7 +32,7 @@ form{
 }
 .form__input{
     display: block;
-    width: 100%;
+    width: 90%;
     font-family: inherit;
     font-size: 20px;
     padding: 5px;
@@ -50,6 +50,9 @@ form{
     border: none;
     border-radius: 2px;
     cursor: pointer;
+        &:hover{
+            background-color: #ba3623;
+        }
 }
 .form__input--message{
     font-family: inherit;
@@ -59,15 +62,13 @@ form{
     border: 1px solid;
     padding: 5px;
     margin-bottom: 20px;
-    margin-left: 10px;
     border-radius: 5px;
-    padding-right: 13px;
 }
 input, textarea{
-
     border-radius: 3px;
     &:focus{
-        color: #d93821;
+        background-color: #edccc7;
+        border-color: #d93821;
     }
 }
 
@@ -79,4 +80,11 @@ input, textarea{
         background-size: 100%;
         background-position: right;
     }
+    form{
+        margin-top: 5%;
+        margin-bottom: 5%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
 }
