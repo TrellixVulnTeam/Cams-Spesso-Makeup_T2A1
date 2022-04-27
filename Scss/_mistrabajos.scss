@@ -8,13 +8,15 @@
 }
 
 .container-uno{
-    padding-top: 150px;
-    display: grid;
-    width: 100%;
-    grid-template-columns: 700px auto;
-    grid-template-rows: 100px 200px;
+    padding-top: 60px;
+    margin-bottom: 60px;
 }
-
+.caja{
+    padding: 20px;
+    margin: 5%;
+    background-color: #161616;
+    border-radius: 20px;
+}
 .titulo-mistrabajos{
     font-size: 50px;
     text-align: center;
@@ -22,8 +24,8 @@
     color: #ffffff;
 }
 .texto-mistrabajos{
-    padding-left: 50px;
-    padding-top: 20px;
+    padding-left: 0px;
+    padding-top: 0px;
     display: flex;
     text-align: center;
     color: #ffffff;
@@ -71,38 +73,29 @@ padding-top: 0px;
     color: #ffffff;
 }
 
-@media screen and (max-width:720px) {
-    .fondo-mistrabajos{
-        background-color: #161616;
-        background-image: url(../Images/MisTrabajos.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-position-y: 45%;
-    }
-    
+@media screen and (max-width:1024px) {    
     .container-uno{
-        padding-top: 50px;
+        padding-top: 0px;
         display: grid;
         width: 100%;
-        grid-template-columns:1fr;
-        grid-template-rows: 100px 270px 300px;
+        grid-template-columns:100%;
+        grid-template-rows: 150px 270px 300px;
     }
     
     .titulo-mistrabajos{
-        padding-left: 30px;
         font-size: 250%;
         color: #ffffff;
-        text-align: left;
+        text-align: center;
         display: flex;
-        align-items: flex-start;
+        align-items: center;
     }
     .texto-mistrabajos{
-        width: 400px;
-        padding-left: 30px;
-        padding-top: 30px;
+        width: 95%;
+        padding-left: 0px;
+        padding-top: 0px;
         size: 80%;
         display: flex;
+        justify-content: center;
         text-align: center;
         color: #ffffff;
     }
@@ -149,7 +142,4 @@ padding-top: 0px;
         text-align: center;
         color: #ffffff;
     }
-}
-@media (max-width:512px){
-    
 }
