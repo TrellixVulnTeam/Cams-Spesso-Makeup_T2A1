@@ -39,7 +39,7 @@
 .no-padding{
     padding-top: 0px;
 }
-@media screen and (max-width:480px) {
+@media screen and (max-width:1024px) {
     .container-sobremi{
         display: grid;
         grid-template-columns: auto;
@@ -67,8 +67,9 @@
     }
     
     .img--sobremi{
+        padding: 15%;
         padding-top: 0px;
-        padding-right: 0px;
+        padding-bottom: 0px;
         grid-area: imagen-sobre;
         width: 100%;
     }

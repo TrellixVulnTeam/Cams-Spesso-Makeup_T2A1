@@ -40,8 +40,7 @@
 }
 .menu {
     list-style: none;
-    padding-top: 30px;
-
+    padding-left: 0px;
 }
 .li-index{
     margin-top: 10px;
@@ -148,11 +147,32 @@ a:link, a:visited, a:active {
         /*  Esta es la imagen del beso */
         display:none;
     }
+ 
 
-}
-@media screen and (max-width:412px) {
-    span{
-        display: none;
+    .banner-index h1{
+        padding-left: 0px;
+        font-size: 120px;     
+        span{
+            display: none;
+        } 
+    }
+    .banner-index{
+        margin: 0px;
+        display: flex;
+        justify-content: center;
+    }
+    .nav{
+        margin: 0px;
+        display: flex;
+        justify-content: center;
+    }
+    .footer-index ion-icon{
+        font-size: 40px;
+        padding-top: 100px;
+    }
+    .boton-index{
+        font-size: 45px;
+        padding: 5px;
     }
     .portada{
         display:none;
