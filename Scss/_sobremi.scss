@@ -56,14 +56,12 @@
         text-align: center;
     }
     .texto--sobremi{
-        width: 95%;
+        width: 100%;
         grid-area: texto-sobre;
-        padding-top: 50px;
-        padding-left: 0px;
-        padding-right: 0px;
         padding: 20px;
         display: flex;
         align-items: center;
+        text-align: justify;
     }
     
     .img--sobremi{

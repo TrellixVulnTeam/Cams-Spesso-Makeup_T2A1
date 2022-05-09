@@ -189,14 +189,12 @@ a:link, a:visited, a:active {
     padding-top: 50px;
     text-align: center; }
   .texto--sobremi {
-    width: 95%;
+    width: 100%;
     grid-area: texto-sobre;
-    padding-top: 50px;
-    padding-left: 0px;
-    padding-right: 0px;
     padding: 20px;
     display: flex;
-    align-items: center; }
+    align-items: center;
+    text-align: justify; }
   .img--sobremi {
     padding: 15%;
     padding-top: 0px;
@@ -259,7 +257,7 @@ a:link, a:visited, a:active {
     size: 80%;
     display: flex;
     justify-content: center;
-    text-align: center;
+    text-align: justify;
     color: #ffffff; } }
 
 @media screen and (min-width: 412px) and (max-width: 1024px) {
@@ -365,6 +363,11 @@ input, textarea {
 
 body {
   font-family: 'Montserrat', sans-serif; }
+  body::-webkit-scrollbar {
+    width: 7px; }
+  body::-webkit-scrollbar-thumb {
+    background: #d93821;
+    border-radius: 5px; }
 
 /* Codigo Banner/Cabecera  */
 header {
