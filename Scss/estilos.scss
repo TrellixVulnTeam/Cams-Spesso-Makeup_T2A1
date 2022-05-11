@@ -71,20 +71,32 @@ header{
 }
 
 @media screen and (max-width:530px) {
-   .banner span{
+    .banner span{
        display: none;
-   }
+    }
 }
 /* Codigo para el pie de pagina */
 
 footer{
     padding-left: 10px;
     padding-top: 20px;
-    a{
+    a{  
         padding-left: 10px;
         color: #d93821;
         &:link, &:visited, &:active{
             text-decoration:none;
+        }
+    }
+}
+
+@media screen and (max-width:530px) {
+    footer{
+        padding-left: 0px ;
+        text-align: center;
+        a{
+            padding-left: 5px;
+            padding-right: 5px;
+            font-size: 30px;
         }
     }
 }

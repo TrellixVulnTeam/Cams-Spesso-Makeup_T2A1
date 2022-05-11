@@ -131,9 +131,12 @@ a:link, a:visited, a:active {
     margin: 0px;
     display: flex;
     justify-content: center; }
-  .footer-index ion-icon {
+  .footer-index {
     font-size: 40px;
-    padding-top: 100px; }
+    margin-top: 100px; }
+    .footer-index a {
+      padding-left: 15px;
+      padding-right: 15px; }
   .boton-index {
     font-size: 45px;
     padding: 5px; }
@@ -420,3 +423,12 @@ footer {
     color: #d93821; }
     footer a:link, footer a:visited, footer a:active {
       text-decoration: none; }
+
+@media screen and (max-width: 530px) {
+  footer {
+    padding-left: 0px;
+    text-align: center; }
+    footer a {
+      padding-left: 5px;
+      padding-right: 5px;
+      font-size: 30px; } }

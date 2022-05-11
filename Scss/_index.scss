@@ -166,9 +166,13 @@ a:link, a:visited, a:active {
         display: flex;
         justify-content: center;
     }
-    .footer-index ion-icon{
+    .footer-index{
         font-size: 40px;
-        padding-top: 100px;
+        margin-top: 100px;
+        a{
+            padding-left: 15px;
+            padding-right: 15px;
+        }
     }
     .boton-index{
         font-size: 45px;
